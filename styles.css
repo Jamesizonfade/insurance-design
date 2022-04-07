@@ -15,13 +15,30 @@ a:link {
     text-decoration: none;
 }
 
-#view-plans {
-    border: 1.5px solid black;
-    padding: 0.7rem;
-    width: max-content;
-    
-
+.nav-button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 2px solid #1b1727;
+    background-color: #FFFFFF;
+    margin-left: 1rem;
+    padding: 0.6rem 1.5rem;
+    z-index: 2;
 }
+
+.nav-button:hover{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 2px solid #1b1727;
+    color: #FFFFFF;
+    background-color:#2c2640;
+    margin-left: 1rem;
+    padding: 0.6rem 1.5rem;
+    z-index: 2;
+}
+
+
 
 .nav-brand {
     float: left;
@@ -32,6 +49,7 @@ a:link {
     font-family: 'Montserrat', sans-serif;
     color: #2c2c40;
     font-weight: bold;
+    font-size: 2vw;
     
 }
 
@@ -46,6 +64,13 @@ a:link {
     margin: 2rem 0.8rem;
     opacity: 0.8;
 }
+
+.nav-item:hover{
+    color:#2c2640;
+    opacity: 1;
+}
+
+
 .nav-toggle {
     display: none;
 }
@@ -65,7 +90,9 @@ a:link {
     flex-direction: column;
 }
 
-
+#intro-container{
+    position: relative;
+}
 
 .intro {
     background-color: #2c2640;
@@ -73,29 +100,313 @@ a:link {
     display: flex;
     padding: 2rem 5rem;
     color: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    
 }
 
 .intro-line{
     background-color: #f0f0f0;
-    height: 0.1rem;
-    width: 6rem;
+    height: 0.05rem;
+    width: 10rem;
 }
 
 .intro-content {
-    width: 50%;
+    max-width: 50%;
+    margin-top: 5rem;
 }
 
-.intro-image {
+.intro-header{
+    font-family: 'DM Serif Display', serif;
+    font-size: 5vw;
+    letter-spacing: 0.2rem;
+    line-height: 1;
+    opacity: 0.9;
+    margin-right: 1rem;
+    margin-bottom: 0;
+}
+
+.intro-paragraph{
+    margin-top: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    margin-right: 1rem;
+    max-width: 95%;
+}
+
+.view-plans{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 1.5px solid #FFFFFF;
+    width: fit-content;
+    padding: 0.6rem 2rem;
+    margin-top: 2rem;
+}
+
+.view-plans:hover{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    color: #1b1727;
+    border: 1.5px solid #FFFFFF;
+    width: fit-content;
+    padding: 0.6rem 2rem;
+    margin-top: 2rem;
+    cursor:default;
+}
+
+
+
+.left-intro-pattern-wrapper{
+    max-width: 50%;
+}
+
+.right-intro-pattern {
+    position: absolute;
+    right: -5rem;
+    top: -5rem;
+    max-width: 80%;
+    z-index: 3;
+}
+
+
+.left-intro-pattern-wrapper{
+    position: relative;
+}
+
+.left-intro-pattern {
+    position: absolute;
+    left: -7rem;
+    bottom: -20rem;
+    z-index: 4;
+}
+
+/* .intro-image {
     text-align: right;
     width: 50%;
     margin-right: 1rem;
+} */
+
+.intro-image-container{
+    text-align: right;
+    right: 6rem;
+    top: 2rem;
+    z-index: 2;
+    position: absolute;
+    max-width: 45%;
 }
 
 .image-intro {
     margin-top: 5rem;
-    max-width: 500px;
-    align-self: right;
-    justify-self: right;
+    max-width: 95%;
+}
+
+
+/* about us section */
+
+#about-us{
+    margin-top: 15rem;
+    background-color: #FFFFFF;
+    padding: 2rem 6rem;
+}
+
+.about-us-line{
+    background-color: #2c2c40;
+    height: 0.08rem;
+    width: 10rem;
+    opacity: 0.5;
+}
+
+.about-us-header{
+    font-family: 'DM Serif Display', serif;
+    color: #1b1727;
+    font-size: 5vw;
+    letter-spacing: 0.2rem;
+    line-height: 1;
+    opacity: 0.9;
+    margin-right: 1rem;
+}
+
+.about-contents{
+    display: flex;
+}
+
+.about-content{
+    margin-right: 1.5rem;
+    opacity: 0.9;
+}
+.people-first{
+    margin-right: 0;
+}
+
+.about-content-heading{
+    font-family: 'DM Serif Display', serif;
+    font-size: 2vw;
+}
+
+.about-content-paragraph{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    opacity: 0.8;
+}
+
+/* how we work */
+
+#how-we-work{
+    margin: 2rem 6rem;
+}
+
+.work{
+    background-color: #2c2640;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.work-heading-wrapper{
+    width: 57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    max-width: 60%;
+}
+
+.work-heading{
+    font-family: 'DM Serif Display', serif;
+    font-size: 4vw;
+    color: #FFFFFF;
+    opacity: 0.9;
+    margin: 3rem 5rem;
+}
+
+.work-button-wrapper{
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.work-button{
+    left: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    border: 2px solid #f0f0f0;
+    color: #f0f0f0;
+    background-color: transparent;
+    padding: 0.6rem 1.5rem;
+    z-index: 2;
+}
+
+
+.work-button:hover{
+    left: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    border:#f0f0f0;
+    color: #2c2640;
+    background-color: #FFFFFF;
+    padding: 0.6rem 1.5rem;
+    z-index: 2;
+}
+
+.how-we-work-pattern{
+    position: absolute;
+    top: 0;
+    right: -1rem;
+}
+
+
+/* footer */
+
+#footer{
+    background-color: #ece9e98a;
+    margin: 10rem 1rem 0 1rem;
+    min-height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.footer-pattern{
+    position: absolute;
+    top: -3rem;
+    left: -5rem;
+    z-index: -1;
+}
+.footer-wrapper{
+    padding: 3rem 5rem;
+}
+
+
+.social-media-icons{
+    float: right;
+}
+
+.social-media-icons > img {
+    margin: 0 0.5rem;
+}
+
+.footer-line{
+    background-color: #2c2c40;
+    height: 0.08rem;
+    width: 100%;
+    margin-top: 2rem;
+    opacity: 0.5;
+}
+
+.footer-contents{
+    display: flex;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 2;
+    letter-spacing: 0.1vw;
+}
+
+.our-company, .help-me, .contact, .others{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font-size: 1.05vw;
+    font-weight: bold;
+}
+
+ h4 {
+    opacity: 0.65;
+}
+
+.footer-links {
+    color: #2c2640;
+}
+
+.footer-links:hover{
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 970px){
+    .intro-image-container{
+        max-width: 40%;
+        position: static;
+        right: 1rem;
+        top: 7rem;
+        position: absolute;
+
+    }
+    .image-intro {
+        margin-top: 0;
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 617px) {
